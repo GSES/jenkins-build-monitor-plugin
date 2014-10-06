@@ -45,9 +45,9 @@
     </contributors>
 
     <scm>
-        <connection>scm:git:ssh://github.com/jan-molak/jenkins-build-monitor-plugin.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/jan-molak/jenkins-build-monitor-plugin.git</developerConnection>
-        <url>https://github.com/jan-molak/jenkins-build-monitor-plugin</url>
+        <connection>scm:git:ssh://github.com/GSE/jenkins-build-monitor-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/GSE/jenkins-build-monitor-plugin.git</developerConnection>
+        <url>https://github.com/GSE/jenkins-build-monitor-plugin</url>
     </scm>
 
     <properties>
