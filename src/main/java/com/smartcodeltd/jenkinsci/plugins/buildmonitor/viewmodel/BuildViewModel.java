@@ -2,6 +2,7 @@ package com.smartcodeltd.jenkinsci.plugins.buildmonitor.viewmodel;
 
 import hudson.model.Result;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.Set;
 
@@ -14,6 +15,7 @@ public interface BuildViewModel {
     public Duration elapsedTime();
     public Duration duration();
     public Duration estimatedDuration();
+	public Calendar timestamp();
     public int progress();
 
     public boolean hasPreviousBuild();

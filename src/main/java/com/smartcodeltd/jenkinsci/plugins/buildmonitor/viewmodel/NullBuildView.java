@@ -2,6 +2,7 @@ package com.smartcodeltd.jenkinsci.plugins.buildmonitor.viewmodel;
 
 import hudson.model.Result;
 
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -35,6 +36,11 @@ public class NullBuildView implements BuildViewModel {
 
     @Override
     public Duration duration() {
+        return null;
+    }
+
+    @Override
+    public Calendar timestamp() {
         return null;
     }
 

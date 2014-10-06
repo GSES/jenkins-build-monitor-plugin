@@ -25,9 +25,9 @@
                 </ul>
             </div>
 
-            <a data-ng-show="!!job.lastBuildName" class="build-name"
-               title="Details of {{job.name}}, build {{job.lastBuildName}}"
-               href="{{job.lastBuildUrl}}">{{job.lastBuildName}}</a>
+			<a data-ng-show="!!job.lastBuildName" class="build-name"
+			   title="Details of {{job.name}}, build {{job.lastBuildName}}"
+			   href="{{job.lastBuildUrl}}">{{job.lastBuildName}} <span class="age"> ({{job.lastBuildTime}})</span></a>
 
             <div data-ng-show="!!job.estimatedDuration" class="build-time">
                 <span class="elapsed" data-ng-show="job.progress > 0">{{job.lastBuildDuration}}</span>

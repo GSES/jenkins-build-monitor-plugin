@@ -9,6 +9,7 @@ import hudson.model.Result;
 import hudson.model.Run;
 import hudson.model.User;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
@@ -67,6 +68,11 @@ public class BuildView implements BuildViewModel {
     public Duration duration() {
         return new Duration(build.getDuration());
     }
+
+	@Override
+	public Calendar timestamp() {
+		return build.getTimestamp();
+	}
 
     @Override
     public Duration estimatedDuration() {

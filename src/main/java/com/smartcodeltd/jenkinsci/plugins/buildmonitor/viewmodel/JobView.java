@@ -92,6 +92,28 @@ public class JobView {
     }
 
     @JsonProperty
+    public String lastBuildTime() {
+		long millis = System.currentTimeMillis() - lastBuild().timestamp().getTime().getTime();
+		long minutes = millis / 1000 / 60;
+
+		String formatted;
+		if (minutes > 10080) {
+			long weeks = minutes / 60 / 24 / 7;
+			formatted = weeks == 1 ? "1 week ago" : weeks + " weeks ago";
+		} else if (minutes > 1440) {
+			long days = minutes / 60 / 24;
+			formatted = days == 1 ? "1 day ago" : days + " days ago";
+		} else if (minutes > 60) {
+			long hours = minutes / 60;
+			formatted = hours == 1 ? "1 hour ago" : hours + " hours ago";
+		} else {
+			formatted = minutes == 1 ? "1 minute ago" : minutes + " minutes ago";
+		}
+
+        return formatted;
+    }
+
+    @JsonProperty
     public String estimatedDuration() {
         return formatted(lastBuild().estimatedDuration());
     }
