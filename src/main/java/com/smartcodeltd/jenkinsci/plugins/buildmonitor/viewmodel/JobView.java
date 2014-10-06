@@ -106,6 +106,8 @@ public class JobView {
 		} else if (minutes > 60) {
 			long hours = minutes / 60;
 			formatted = hours == 1 ? "1 hour ago" : hours + " hours ago";
+		} else if (minutes == 0) {
+			formatted = "just now";
 		} else {
 			formatted = minutes == 1 ? "1 minute ago" : minutes + " minutes ago";
 		}
