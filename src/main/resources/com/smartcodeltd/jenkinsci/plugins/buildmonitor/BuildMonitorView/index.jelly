@@ -45,7 +45,7 @@
 
                 <footer>
                     <notifier />
-					<span class="plugin-author"><a href='http://jira/secure/RapidBoard.jspa?rapidView=60&view=reporting&chart=burndownChart'>Sprint Status Board</span>
+					<span class="plugin-author"><a href='http://jira/secure/RapidBoard.jspa?rapidView=60&amp;view=reporting&amp;chart=burndownChart'>Sprint Status Board</a></span>
                 </footer>
             </div>
 
