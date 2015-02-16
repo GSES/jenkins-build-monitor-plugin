@@ -1,5 +1,6 @@
 package com.smartcodeltd.jenkinsci.plugins.buildmonitor.viewmodel;
 
+import com.smartcodeltd.jenkinsci.plugins.buildmonitor.viewmodel.duration.Duration;
 import hudson.model.Result;
 
 import java.util.Calendar;
@@ -13,6 +14,7 @@ public interface BuildViewModel {
 
     public boolean isRunning();
     public Duration elapsedTime();
+    public Duration timeElapsedSince();
     public Duration duration();
     public Duration estimatedDuration();
 	public Calendar timestamp();
