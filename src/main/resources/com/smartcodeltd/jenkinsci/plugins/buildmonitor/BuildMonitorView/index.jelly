@@ -44,7 +44,7 @@
 
                 <footer>
                     <notifier />
-                    <span class="plugin-author">Brought to you by <a href="http://smartcodeltd.co.uk" rel="external">Jan Molak</a></span>
+					<span class="plugin-author"><a href='http://jira/secure/RapidBoard.jspa?rapidView=60&view=reporting&chart=burndownChart'>Sprint Status Board</span>
                 </footer>
             </div>
 
